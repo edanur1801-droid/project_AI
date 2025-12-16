@@ -34,10 +34,8 @@ export default async function handler(req, res) {
       return res.status(500).json({ error: 'Server Konfigürasyon Hatası: API Key yok.' });
     }
 
-    // --- ENTEGRE EDİLMİŞ VE GÜNCELLENMİŞ PROMPT MANTIĞI BURADA ---
-   // ... (api/analyze.js içindeki SYSTEM_INSTRUCTION'ı bununla değiştirin)
-
-const SYSTEM_INSTRUCTION = `
+    // --- GÜNCEL, RASYONEL PUANLAMA MANTIĞI BURADA ---
+    const SYSTEM_INSTRUCTION = `
 Sen Iris, Gemini Teknolojisiyle çalışan en gelişmiş Marka İstihbarat Analistisin.
 Görevin: Markayı analiz etmek ve sadece aşağıdaki JSON formatında çıktı vermek. Başka hiçbir şey yazma.
 
