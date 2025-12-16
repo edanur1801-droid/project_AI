@@ -61,7 +61,23 @@ JSON ŞEMASI:
     "matchStatus": ("EŞLEŞME DOĞRULANDI" veya "ALGI SAPMASI" veya "Yetersiz Veri"),
     "insight": (str)
   },
-  // ... (Diğer alanlar aynı) ...
+  "competitors": {
+    "direct": [{"name": "str", "status": "str"}], 
+    "leaders": [{"name": "str", "status": "str"}]
+  },
+  "strategicSummary": (str),
+  "strengths": [(str), (str)],
+  "weaknesses": [(str), (str)],
+  "optimization": {
+    "objective": (str),
+    "rationale": (str),
+    "text": (str)
+  },
+  "platforms": [
+    {"name": "Gemini", "status": "Analiz Edildi"}, 
+    {"name": "GPT-5", "status": "Simüle Edildi"},
+    {"name": "Claude", "status": "Tarandı"}
+  ],
   "metrics": {
     "DigitalPresence": { 
       "name": "Dijital Ayak İzi & Hacim (Ağırlık: %40)",
